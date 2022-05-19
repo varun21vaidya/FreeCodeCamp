@@ -1,0 +1,98 @@
+:root {
+  font-family: Roboto, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+main {
+  margin-left: 20em;
+  margin-top: -300px;
+}
+
+.p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+}
+
+section article {
+  color: #3b3b3b;
+}
+header {
+  font-size: 30px;
+  margin-top: 2em;
+  font-weight: 600;
+  margin-bottom: 1em;
+}
+
+code {
+  display: block;
+  background-color: rgb(228, 228, 228);
+  max-width: 80%;
+  padding: 5px;
+}
+.open-btn {
+  position: sticky;
+  font-size: 200px;
+}
+nav {
+  height: 100%;
+  width: 0;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: rgb(3, 3, 3);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  color: #ffff;
+}
+
+nav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  display: block;
+  transition: 0.3s;
+  color: #ffff;
+}
+
+nav a:hover {
+  color: #f1f1f1;
+}
+
+nav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+@media screen and (max-height: 450px) {
+  nav {
+    padding-top: 15px;
+  }
+  nav a {
+    font-size: 18px;
+  }
+}
+nav header {
+  margin-top: 10px;
+  margin-left: 20px;
+  font-size: 25px;
+}
+nav li {
+  list-style: none;
+  font-size: 30px;
+  margin-top: 10px;
+  margin-left: 0;
+}
+/* nav::-webkit-scrollbar {
+    width: 5px;
+  }
+  nav::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+  nav::-webkit-scrollbar-thumb {
+    background-color: darkgray;
+    outline: 1px solid slategrey;
+  } */

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech Documentation Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+        <span id="open-btn" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+    <nav id="navbar" class="navbar">
+      <header>Python Doc</header>
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+    <a href="#Introduction" id="open" onclick="closeNav()" class="nav-link">Introduction</a>
+    <a href="#Variables" onclick="closeNav()" class="nav-link">Variables</a>
+    <a href="#Strings" onclick="closeNav()" class="nav-link">Strings</a>
+    <a href="#Lists" onclick="closeNav()" class="nav-link">Lists</a>
+    <a href="#Operations" onclick="closeNav()" class="nav-link">Operations</a>
+    </nav>
+    <script>
+        function openNav() {
+          document.getElementById("navbar").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("navbar").style.width = "0";
+        }
+        </script>
+    <main id="main-doc">
+      <section id="Introduction" class="main-section">
+        <header>Introduction</header>
+        <article>
+          <p>
+            Python is an easy to learn, powerful programming language. It has
+            efficient highlevel data structures and a simple but effective
+            approach to object-oriented programming. Python's elegant syntax and
+            dynamic typing, together with its interpreted nature, make it an
+            ideal language for scripting and rapid application development in
+            many areas on most platforms.
+          </p>
+          <p>
+            Guido van Rossum, the creator of the Python language, named the
+            language after the BBC show "Monty Python's Flying Circus". He
+            doesn't particularly like snakes that kill animals for food by
+            winding their long bodies around them and crushing them.
+          </p>
+
+          <p># This program prints Hello, world!</p>
+          <code> print('Hello, world!') </code>
+        </article>
+      </section>
+      <section id="Variables" class="main-section">
+        <header>Variables</header>
+        <article>
+          <p>Variables are simply names which point to any value or object:</p>
+          <code>_string = "hello, world" </code><br />
+          <code>an_integer = 12</code><br />
+          <code>a_float = 3.14 </code><br />
+          <code>a_float = 3.14 </code><br />
+          <code>nothing = None</code>
+          <p>
+            Dynamic typing: the value or type of a variable may be changed at
+            any time
+          </p>
+        </article>
+      </section>
+      <section id="Strings" class="main-section">
+        <header>Strings</header>
+        <article>
+          <p>There are 3 syntaxes for string constants:</p>
+          <p>
+            Single Quotes <br />
+            Double Quotes <br />
+            Tripple Quotes (Used as multiline comment)
+          </p>
+          <p>
+            Strings are objects which support many operations: strings = string1
+            + " : " + string2 <br />
+            Get the length of a string: len(strings) <br />
+            Convert to uppercase: strings_uppercase = strings.upper() <br />
+            Strip spaces at beginning and end of a string: stripped =
+            a_string.strip() <br />
+            Replace a substring inside a string: newstring =
+            a_string.replace('abc', 'def')
+          </p>
+        </article>
+      </section>
+      <section id="Lists" class="main-section">
+        <header>Lists</header>
+        <article>
+          <p>
+            A list is a dynamic array of any objects. It is declared with square
+            brackets: <br />
+            <code> mylist = [1, 2, 3, 'abc', 'def']</code>
+          </p>
+          <p>
+            Access a specific element by index (index starts at zero): <br />
+            <code> third_item = mylist[2] </code>
+          </p>
+        </article>
+      </section>
+      <section id="Operations" class="main-section">
+        <header>Operations</header>
+        <article>
+          <p>
+            Operations on a list:<br />
+            <code>
+              mylist[2] = 'new value' <br />
+              mylist.append('another value') <br />
+              mylist.remove('abc') <br />
+              length = len(mylist) <br />
+              longlist = mylist + [4,5,6]
+            </code>
+          </p>
+          <p>
+            Slicing is extracting a sublist from a list:<br />
+
+              <ul>
+                <code>
+                <li>first_two_items = mylist[0:2]</li>
+                <li>third_and_fourth = mylist[2:4]</li>
+                <li>fourth_up_to_end = mylist[3:]</li>
+                <li>last_two_items = mylist[-2:]</li>
+                <li>first_two_items2 = mylist[:2]</li>
+            </code>
+              </ul>
+            
+          </p>
+        </article>
+      </section>
+    </main>
+</body>
+</html>
