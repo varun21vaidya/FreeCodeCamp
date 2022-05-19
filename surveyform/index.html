@@ -1,0 +1,102 @@
+<div class="container">
+    <header id="header">
+      <h1 id="title" class="text-center"> IT Employee Survey </h1>
+      <p id="description" class="Discription text-center">
+        Thank you for taking your time
+      </p>
+      <link rel="stylesheet" href="style.css">
+    </header>
+  
+    <form id="survey-form">
+      <!--     name field -->
+      <div class="form-group">
+        <label id="name-label" for="name">Name</label>
+        <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required />
+      </div>
+      <!--    email field      -->
+      <div class="form-group">
+        <label id="email-label" for="email">Email</label>
+        <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required />
+      </div>
+      <!--       number field -->
+      <div class="form-group">
+        <label id="number-label" for="number">Age <span class="clue" (optional)></label>
+        <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age" required />
+      </div>
+  
+      <!--    which was your company -->
+      <div class="form-group">
+        <p>Which company you are working currently</p>
+        <label>
+          <input name="company" value="infy" type="radio" class="input-radio" checked />Infy
+        </label>
+  
+        <label>
+          <input name="company" value="Cogni" type="radio" class="input-radio" />Cognizant
+        </label>
+  
+        <label>
+          <input name="company" value="tcs" type="radio" class="input-radio" />TCS
+        </label>
+  
+        <label>
+          <input name="company" value="CapG" type="radio" class="input-radio" />Capgemini
+        </label>
+        <label>
+          <input name="company" value="Accenture" type="radio" class="input-radio" />Accenture
+        </label>
+  
+        <label>
+          <input name="company" value="other" type="radio" class="input-radio" />other
+        </label>
+        <!--       which technology you have wrked on -->
+      </div>
+  
+      <div class="form-group">
+        <p>What is your current Role</p>
+        <select id="dropdown" name="role" class="form-control" required>
+          <option disabled selected value>Your Role</option>
+          <option value="front End Dev">Front End Dev</option>
+          <option value="Back End Dev">Back End Dev</option>
+          <option value="Full stack Dev"> Full stack Dev</option>
+          <option value="Support">Support</option>
+          <option value="Testing">Testing</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+  
+      <div class="form-group">
+        <p>What Technologes you have worked</p>
+  
+        <label><input name="prefer" value="ReactJS" type="checkbox" class="input-checkbox" />ReactJS</label>
+  
+        <label><input name="prefer" value="AngularJS" type="checkbox" class="input-checkbox" />AngularJS</label>
+  
+        <label><input name="prefer" value=".NET" type="checkbox" class="input-checkbox" />.NET</label>
+  
+        <label><input name="prefer" value="SQL" type="checkbox" class="input-checkbox" />SQL</label>
+  
+        <label><input name="prefer" value="MongoDB" type="checkbox" class="input-checkbox" />MongoDB</label>
+  
+        <label><input name="prefer" value="Python" type="checkbox" class="input-checkbox" />Python</label>
+  
+        <label><input name="prefer" value="Node.js" type="checkbox" class="input-checkbox" />Node.js</label>
+  
+        <label><input name="prefer" value="php" type="checkbox" class="input-checkbox" />php</label>
+  
+        <label><input name="prefer" value="ruby" type="checkbox" class="input-checkbox" />ruby</label>
+  
+      </div>
+  
+      <div class="form-group">
+        <p>Any Additional Skills you have</p>
+        <textarea id="skills" class="input-textarea" name="skills" placeholder="Write your additional skills here..."></textarea>
+      </div>
+  
+      <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">
+          Submit
+        </button>
+      </div>
+    </form>
+  </div>
